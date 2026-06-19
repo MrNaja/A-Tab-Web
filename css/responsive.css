@@ -1,0 +1,96 @@
+@media (min-width: 980px) {
+  .bookmarks-view {
+    width: min(100%, 760px);
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --sidebar-width: 100%;
+    --header-height: 42px;
+  }
+
+  .app-header {
+    padding: 0 14px;
+  }
+
+  .app-content {
+    flex-direction: column;
+  }
+
+  .groups-sidebar {
+    width: 100%;
+    min-width: 0;
+    flex: 0 0 auto;
+    padding: 7px 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .group-list {
+    width: max-content;
+    min-width: 100%;
+    flex-direction: row;
+  }
+
+  .group-item {
+    width: auto;
+    max-width: 104px;
+    flex: 0 0 auto;
+    padding: 0 10px;
+  }
+
+  .content-panel {
+    padding: 12px;
+  }
+
+  .bookmark-grid {
+    grid-template-columns: 1fr;
+    row-gap: 7px;
+  }
+
+  .divider-title {
+    max-width: 70%;
+  }
+
+  .setting-item {
+    min-height: 58px;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand {
+    font-size: 15px;
+  }
+
+  .content-panel {
+    padding: 10px;
+  }
+
+  .card-header {
+    padding: 14px 16px;
+  }
+
+  .card-content {
+    padding: 6px 16px 16px;
+  }
+
+  .setting-item {
+    gap: 12px;
+  }
+
+  .settings-button-group {
+    gap: 6px;
+  }
+
+  .settings-button-group .settings-btn {
+    min-width: 58px;
+    padding: 0 10px;
+  }
+
+  .setting-select {
+    width: 120px;
+  }
+}
