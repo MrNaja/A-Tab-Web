@@ -1,0 +1,87 @@
+:root {
+  --color-accent: #00a1d6;
+  --color-accent-hover: #0088b3;
+  --color-accent-subtle: rgba(0, 161, 214, 0.1);
+  --color-accent-rgb: 0, 161, 214;
+
+  --color-bg-base: #ffffff;
+  --color-bg-subtle: #f8f9fa;
+  --color-bg-muted: #f1f3f5;
+  --color-bg-hover: rgba(0, 161, 214, 0.05);
+  --color-bg-overlay: rgba(0, 0, 0, 0.4);
+
+  --color-text-primary: #333333;
+  --color-text-secondary: #6c757d;
+  --color-text-muted: #adb5bd;
+  --color-text-inverse: #ffffff;
+
+  --color-border: #e9ecef;
+  --color-border-strong: #cfd6dd;
+  --color-warning: #ff8c00;
+  --color-warning-subtle: rgba(255, 140, 0, 0.15);
+  --color-success: #28a745;
+  --color-success-subtle: #f0fff4;
+  --color-danger: #dc3545;
+  --color-danger-subtle: #fdf2f2;
+
+  --color-mark-1: #fff9c4;
+  --color-mark-2: #b8ebbd;
+  --color-mark-3: #fdd8e5;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+
+  --font-size-app: 13px;
+  --font-size-bookmark: 13px;
+  --sidebar-width: 88px;
+  --header-height: 30px;
+  --bookmark-height: 22px;
+}
+
+[data-font-size='small'] {
+  --font-size-app: 12px;
+  --font-size-bookmark: 12px;
+  --bookmark-height: 21px;
+}
+
+[data-font-size='large'] {
+  --font-size-app: 15px;
+  --font-size-bookmark: 15px;
+  --bookmark-height: 28px;
+  --sidebar-width: 108px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-accent: #33b8e6;
+    --color-accent-hover: #55c5eb;
+    --color-accent-subtle: rgba(51, 184, 230, 0.15);
+
+    --color-bg-base: #3c3c3c;
+    --color-bg-subtle: #2b2b2b;
+    --color-bg-muted: #2a2a3e;
+    --color-bg-hover: rgba(51, 184, 230, 0.08);
+    --color-bg-overlay: rgba(0, 0, 0, 0.65);
+
+    --color-text-primary: #dadada;
+    --color-text-secondary: #9898b0;
+    --color-text-muted: #6c6c7d;
+
+    --color-border: #515158;
+    --color-border-strong: #66666f;
+
+    --color-mark-1: #5a4a28;
+    --color-mark-2: #356435;
+    --color-mark-3: #803a51;
+  }
+}

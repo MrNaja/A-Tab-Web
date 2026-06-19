@@ -1,0 +1,65 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg-subtle);
+}
+
+.app-header {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  padding: 0 16px;
+  background: var(--color-bg-base);
+  border-bottom: 1px solid var(--color-border);
+  user-select: none;
+}
+
+.brand {
+  color: var(--color-accent);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.app-content {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+}
+
+.groups-sidebar {
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  flex: 0 0 var(--sidebar-width);
+  padding: 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: var(--color-bg-base);
+  border-right: 1px solid var(--color-border);
+}
+
+.content-panel {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: auto;
+  padding: 14px 16px;
+}
+
+.bookmarks-view {
+  width: min(100%, 720px);
+  margin: 0 auto;
+}
+
+.settings-view {
+  width: min(100%, 460px);
+  margin: 0 auto;
+}
